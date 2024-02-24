@@ -1,7 +1,7 @@
 ## Server Side Template Injection Payloads
 
 
-<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"> <img src="https://img.shields.io/github/stars/payloadbox/ssti-payloads?style=social"> <img src="https://img.shields.io/github/forks/payloadbox/ssti-payloads?style=social"> <img src="https://img.shields.io/github/repo-size/payloadbox/csv-injection-payloads"> <img src="https://img.shields.io/github/license/payloadbox/ssti-payloads"> <img src="https://img.shields.io/github/issues/detail/author/payloadbox/csv-injection-payloads/1">
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"> <img src="https://img.shields.io/github/stars/fr4nzisko/ssti-payloads?style=social"> <img src="https://img.shields.io/github/forks/fr4nzisko/ssti-payloads?style=social"> <img src="https://img.shields.io/github/repo-size/fr4nzisko/csv-injection-payloads"> <img src="https://img.shields.io/github/license/fr4nzisko/ssti-payloads"> <img src="https://img.shields.io/github/issues/detail/author/fr4nzisko/csv-injection-payloads/1">
 
 Server-side template injection is when an attacker is able to use native template syntax to inject a malicious payload into a template, which is then executed server-side.
 
@@ -78,10 +78,10 @@ ${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().ex
 
 ##### Cloning an Existing Repository ( Clone with HTTPS )
 ```
-root@fr4nzisko:~# git clone https://github.com/payloadbox/ssti-payloads.git
+root@fr4nzisko:~# git clone https://github.com/fr4nzisko/ssti-payloads.git
 ```
 
 ##### Cloning an Existing Repository ( Clone with SSH )
 ```
-root@fr4nzisko:~# git clone git@github.com:payloadbox/ssti-payloads.git
+root@fr4nzisko:~# git clone git@github.com:fr4nzisko/ssti-payloads.git
 ```
